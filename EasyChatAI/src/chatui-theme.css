@@ -1,0 +1,91 @@
+:root {
+  --brand-1: rgb(64, 65, 79);
+  --brand-2: rgb(64, 65, 79);
+  --brand-3: rgb(64, 65, 79);
+  --marked-color: #ffffff;
+  font-size: 20px;
+  --btn-primary-color: #ffffff;
+}
+
+.ChatApp,
+.MessageContainer,
+.Navbar,
+.Message .Bubble,
+.QuickReplies,
+.ChatFooter {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ChatApp {
+  background-color: rgb(64, 65, 79);
+}
+
+.Navbar {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  box-shadow: none;
+}
+
+.Navbar .IconBtn {
+  color: #ffffff;
+}
+
+.Navbar-title {
+  color: #ffffff;
+}
+
+.Message.left .Bubble {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+}
+
+.Message.right .Bubble {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.QuickReply.highlight {
+  background-color: #4a4a4a;
+  color: #fff;
+  border-color: rgba(255, 208, 191, 0);
+}
+
+.QuickReplies,
+.ChatFooter {
+  background-color: rgb(64, 65, 79);
+}
+
+.Input {
+  /* background-color: rgb(64 ,65 ,79);
+  max-height: 400px;
+  border-radius: 8px;
+  caret-color: white;
+
+  box-shadow: black 0px 1px 2px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  flex-shrink: 1;
+  color: white;
+  caret-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 2;
+  line-height: 1.5rem;
+  border-radius: var(--rounded-btn, 0.5rem);
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  border-width: 1px;
+}
+.Input:focus {
+  box-shadow:none !important;
+}
+.Input::placeholder {
+  font-size: .8rem
+}
+.Composer-actions{
+  display: none;
+}
